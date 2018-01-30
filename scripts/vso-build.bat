@@ -30,6 +30,12 @@ TYPE  %AGENT_WORKFOLDER%\_temp\chocolatey\yarn\yarn.MsiInstall.log
 
 DIR C:\ProgramData
 
+SET
+
+DIR d:\
+
+
+
 scripts/npm.bat install --arch=x64
 
 node .\node_modules\gulp\bin\gulp.js compile
