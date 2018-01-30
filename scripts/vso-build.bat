@@ -13,6 +13,8 @@ WHERE yarn
 
 SET "PATH=%PATH%;%ProgramFiles(x86)%\yarn;%ProgramFiles%\yarn"
 
+refreshenv
+
 scripts/npm.bat install --arch=x64
 
 node .\node_modules\gulp\bin\gulp.js compile
