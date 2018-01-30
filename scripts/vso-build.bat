@@ -13,9 +13,11 @@ type C:\ProgramData\chocolatey\logs\chocolatey.log
 
 WHERE yarn
 
-type .\_temp\chocolatey\yarn\yarn.MsiInstall.log
+ECHO %CD%
 
-DIR .\_temp\chocolatey\yarn\1.3.2
+type ..\_temp\chocolatey\yarn\yarn.MsiInstall.log
+
+DIR ..\_temp\chocolatey\yarn\1.3.2
 
 SET "PATH=%PATH%;%ProgramFiles(x86)%\yarn;%ProgramFiles%\yarn"
 
