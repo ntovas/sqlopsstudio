@@ -21,8 +21,6 @@ DIR ..\_temp\chocolatey\yarn\1.3.2
 
 SET "PATH=%PATH%;%ProgramFiles(x86)%\yarn;%ProgramFiles%\yarn"
 
-refreshenv
-
 ECHO %AGENT_WORKFOLDER%
 ECHO %AGENT_HOMEDIRECTORY%
 ECHO %AGENT_BUILDDIRECTORY%
