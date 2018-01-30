@@ -23,6 +23,16 @@ SET "PATH=%PATH%;%ProgramFiles(x86)%\yarn;%ProgramFiles%\yarn"
 
 refreshenv
 
+ECHO %AGENT_WORKFOLDER%
+ECHO %AGENT_HOMEDIRECTORY%
+ECHO %AGENT_BUILDDIRECTORY%
+ECHO %AGENT_WORKFOLDER%
+
+DIR  %AGENT_WORKFOLDER%\_temp
+DIR  %AGENT_HOMEDIRECTORY%\_temp
+DIR  %AGENT_BUILDDIRECTORY%\_temp
+DIR  %AGENT_WORKFOLDER%\_temp
+
 scripts/npm.bat install --arch=x64
 
 node .\node_modules\gulp\bin\gulp.js compile
