@@ -32,6 +32,7 @@ DIR  %AGENT_WORKFOLDER%\_temp
 DIR  %AGENT_HOMEDIRECTORY%\_temp
 DIR  %AGENT_BUILDDIRECTORY%\_temp
 DIR  %AGENT_WORKFOLDER%\_temp
+DIR C:\ProgramData
 
 scripts/npm.bat install --arch=x64
 
