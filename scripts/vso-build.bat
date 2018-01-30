@@ -1,8 +1,8 @@
 git config core.autocrlf false
 git rm --cached -r .
 
-npm install --global yarn
-npm install yarn
+cmd /c npm install --global yarn
+cmd /c npm install yarn
 
 scripts\npm.bat install --arch=x64
 
