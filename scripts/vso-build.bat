@@ -15,21 +15,19 @@ WHERE yarn
 
 ECHO %CD%
 
-type ..\_temp\chocolatey\yarn\yarn.MsiInstall.log
-
-DIR ..\_temp\chocolatey\yarn\1.3.2
 
 SET "PATH=%PATH%;%ProgramFiles(x86)%\yarn;%ProgramFiles%\yarn"
 
-ECHO %AGENT_WORKFOLDER%
 ECHO %AGENT_HOMEDIRECTORY%
 ECHO %AGENT_BUILDDIRECTORY%
 ECHO %AGENT_WORKFOLDER%
 
 DIR  %AGENT_WORKFOLDER%\_temp
-DIR  %AGENT_HOMEDIRECTORY%\_temp
-DIR  %AGENT_BUILDDIRECTORY%\_temp
-DIR  %AGENT_WORKFOLDER%\_temp
+DIR  %AGENT_WORKFOLDER%\_temp\chocolatey
+DIR  %AGENT_WORKFOLDER%\_temp\chocolatey\yarn
+DIR  %AGENT_WORKFOLDER%\_temp\chocolatey\yarn\1.3.2
+TYPE  %AGENT_WORKFOLDER%\_temp\chocolatey\yarn\yarn.MsiInstall.log
+
 DIR C:\ProgramData
 
 scripts/npm.bat install --arch=x64
